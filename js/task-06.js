@@ -14,11 +14,11 @@ function inValidEl() {
 function borderColorChange(event) {
   const enterSymbols = this.value.trim();
   if (enterSymbols.length === Number(validInputEl.dataset.length)) {
-    validEl();
+    validEl(".valid", ".invalid");
   } else {
     // console.log(typeof validInputEl.dataset.length);
 
-    inValidEl();
+    inValidEl(".invalid", ".valid");
   }
 }
 
