@@ -12,7 +12,7 @@ function inValidEl() {
 }
 
 function borderColorChange(event) {
-  const enterSymbols = this.value;
+  const enterSymbols = this.value.trim();
   if (enterSymbols.length === Number(validInputEl.dataset.length)) {
     validEl();
   } else {
